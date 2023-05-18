@@ -1,0 +1,45 @@
+theme = "dark_plus"
+
+[editor]
+line-number = "relative"
+auto-save = true
+idle-timeout = 1
+completion-trigger-len = 2
+bufferline = "multiple"
+text-width = 120
+
+[editor.statusline]
+left = ["mode", "spinner"]
+center = ["version-control", "spacer", "file-name", "file-modification-indicator"]
+right = ["diagnostics", "separator", "selections", "separator","position", "position-percentage","total-line-numbers", "file-encoding","separator", "file-type"]
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.lsp]
+display-messages = true
+display-inlay-hints = true
+display-signature-help-docs = true
+
+[editor.indent-guides]
+render = true
+skip-levels = 1
+
+# character = "|"
+
+[editor.whitespace.render]
+space = "all"
+nbsp = "all"
+tab = "all"
+newline = "none"
+
+[editor.soft-wrap]
+enable = true
+
+# [python.analysis]
+# autoImportCompletions = false

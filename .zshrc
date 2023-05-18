@@ -54,7 +54,7 @@ unalias cdh 2>/dev/null
 cdh() {
   if [[ -n $ZSH_INIT_CDH_ALIAS ]]; then
     cd "${ZSH_INIT_CDH_ALIAS//[\'\"]*}";
-  elif [ "$(git rev-parse --is-inside-work-tree 2>/dev/null)" = "true"]; then
+  elif [ "$(git rev-parse --is-inside-work-tree 2>/dev/null)" = "true" ]; then
     cd "$(git rev-parse --show-toplevel)";
   else
     cd;
